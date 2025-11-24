@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Ferrari Tailwind</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'dark-gradient': 'linear-gradient(180deg, #333333 0%, #1A1A1A 100%)',
+                    }
+                    // textStyle: {
+                    //     '.text-formated': {
+                    //         'font-family': 'Montserrat',
+                    //         'font-weight': '600',
+                    //         'font-size': '18px',
+                    //         'line-height': '100%',
+                    //         'color': '#ffffff'
+                    //     }
+                    // }
+                }
+            },
+            plugins: [
+                function ({
+                    addUtilities
+                }) {
+                    addUtilities({
+                        '.header': {
+                            padding: '40px 0px 0px 0px'
+                        },
+                        '.section': {
+                            padding: '100px 0px'
+                        },
+                        '.container': {
+                            'max-width': '1440px',
+                            'width': '100%',
+                            'padding': '0px 20px',
+                            'margin': '0px auto'
+                        },
+                        '.flexes': {
+                            display: 'flex',
+                            'align-items': 'center',
+                            // 'justify-content': 'space-between',
+                        },
+                        '.text-formated': {
+                            'font-family': 'Montserrat',
+                            'font-weight': '500',
+                            'font-size': '18px',
+                            'line-height': '100%',
+                            'color': '#ffffff'
+                        }
+                    });
+                }
+            ]
+        }
+    </script>
+    <style>
+
+    </style>
+
+</head>
+
+<body class="bg-dark-gradient font-[Montserrat]">
+    <!-- Header start -->
+    <header class="header">
+        <div class="container">
+
+            <div class="flexes justify-between">
+                <!-- Navigation -->
+                <nav class="flexes gap-[160px]">
+                    <a href="index.html" class="">
+                        <img src="assets/img/logo.svg" alt="Logo" class="">
+                    </a>
+                    <ul class="flexes gap-[40px]">
+                        <li class="">
+                            <a href="#" class="text-formated">Услуги</a>
+                        </li>
+
+                        <li class="">
+                            <a href="#" class="text-formated">Преимущества</a>
+                        </li>
+
+                        <li class="">
+                            <a href="#" class="text-formated">Наши работы</a>
+                        </li>
+
+                        <li class="">
+                            <a href="#" class="text-formated">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Navigation end -->
+
+                <!-- Header Right block -->
+                <div class="flexes gap-[40px]">
+                    <a href="#"
+                        class="text-[20px] font-bold text-[#fff] border-b-[1px] border-[#FF0000] pt-[10px] pb-[10px]">+7
+                        (999) 999-09-90</a>
+                    <div class="flexes gap-[20px]">
+                        <a href="#" class="">
+                            <img src="assets/img/whatsapp.svg" alt="Icon" class="">
+                        </a>
+                        <a href="#" class="">
+                            <img src="assets/img/telegram.svg" alt="Icon" class="">
+                        </a>
+                    </div>
+                </div>
+                <!-- Header Right block end -->
+
+            </div>
+
+            <!-- Hero Section -->
+            <section class="pt-[110px] relative">
+                <div class="">
+                    <h1 class="text-[#ffffff] text-[52px] font-extrabold leading-[100%] uppercase mb-[20px]">
+                        Превосходство в обслуживании</h1>
+                    <p class="text-[#ffffff] font-semibold text-[36px] leading-[100%] mb-[50px]">Ваша машина в надежных
+                        руках!</p>
+                    <button
+                        class="text-[18px] px-[65px] py-[20px] bg-[linear-gradient(180deg,#FF0000_0%,#C70000_100%)] rounded-[10px] text-white mb-[75px]">ОСТАВИТЬ
+                        ЗАЯВКУ</button>
+                    <a href="#" class="">
+                        <img src="assets/img/italy.svg" alt="picture" class="mb-[20px]">
+                    </a>
+                    <a href="#" class="">
+                        <img src="assets/img/britsh.svg" alt="picture" class="mb-[120px]">
+                    </a>
+                    <a href="#" class="flexes gap-[20px] text-[20px] font-[500] text-[#fff] mb-[50px]">
+                        <img src="assets/img/mouse.svg" alt="" class="">
+                        Листайте вниз
+                    </a>
+                    <div class="absolute top-[220px] right-[-95px]">
+                        <img src="assets/img/ferrari.png" alt="" class="">
+                    </div>
+                </div>
+            </section>
+            <!-- Hero Section end -->
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main start -->
+    <main class="">
+        <div class="container">
+            <section class="section">
+                <div
+                    class="border-[#FF0000] border-[1px] rounded-[10px] p-[40px] bg-[url('./assets/img/section-bg.png')] bg-right bg-no-repeat bg-[#1A1A1A]">
+                    <h2
+                        class="max-w-[730px] w-[100%] font-[Montserrat] font-medium text-[32px] leading-[140%] text-[#ffffff] mb-[40px]">
+                        <span class="text-[#FFB72B]">
+                            Чтобы узнать точную стоимость работ,
+                        </span>запишитесь на бесплатную консультацию</h2>
+                    <div class="">
+                        <form action="" class="flexes gap-[20px] h-[62px] mb-[20px]">
+                            <input type="text"
+                                class="h-[100%] max-w-[410px] w-[100%] px-[20px] outline-[#FFB72B] font-[Montserrat] font-normal text-[18px] leading-[140%] text-[#1A1A1A80] rounded-[10px]"
+                                placeholder="Ваше имя">
+                            <input type="tel"
+                                class="h-[100%] max-w-[410px] w-[100%] px-[80px] font-[Montserrat] font-normal text-[18px] leading-[140%] tracking-[0%] text-[#1A1A1A] outline-[#FFB72B] rounded-[10px] bg-no-repeat bg-[20px] bg-[url('./assets/img/Russia.png')]"
+                                placeholder="+7 (999) 999-99-99">
+                            <button
+                                class="h-[100%] text-[18px] px-[80px] bg-[linear-gradient(180deg,#FF0000_0%,#C70000_100%)] rounded-[10px] text-white">ЗАПИСАТЬСЯ</button>
+                        </form>
+                    </div>
+                    <p class="font-medium text-[16px] leading-[140%] text-white">Оставляя заявку, вы даете согласие на
+                        обработку персональных данных</p>
+                </div>
+            </section>
+
+            <section class="pb-[100px]">
+                <div class="">
+
+                    <!-- Title -->
+                    <h2 class="text-white text-[36px] font-bold mb-3">
+                        НАШИ УСЛУГИ
+                    </h2>
+
+                    <!-- Subtitle -->
+                    <p class="text-[#D1D1D1] text-[18px] mb-10">
+                        Снизу мы предоставили список наших услуг по разделам:
+                    </p>
+
+                    <!-- Cards Grid -->
+                    <div class="grid grid-cols-4 gap-x-[20px] gap-y-[50px]">
+
+                        <!-- Card -->
+                        <div class="">
+                            <img src="assets/img/1.png" alt="" class="w-[100%]">
+                            <p class="text-white text-center py-4 font-semibold text-[16px]">
+                                ТЕХ.ОБСЛУЖИВАНИЕ
+                            </p>
+                        </div>
+
+                        <div class="">
+                            <img src="assets/img/1.png" alt="" class="w-[100%]">
+                            <p class="text-white text-center py-4 font-semibold text-[16px]">
+                                ДИАГНОСТИКА
+                            </p>
+                        </div>
+
+                        <div class="">
+                            <img src="assets/img/1.png" alt="" class="w-[100%]">
+                            <p class="text-white text-center py-4 font-semibold text-[16px]">
+                                ХОДОВАЯ ЧАСТЬ
+                            </p>
+                        </div>
+
+                        <div class="">
+                            <img src="assets/img/1.png" alt="" class="w-[100%]">
+                            <p class="text-white text-center py-4 font-semibold text-[16px]">
+                                ТРАНСМИССИЯ
+                            </p>
+                        </div>
+
+                        <div class="">
+                            <img src="assets/img/1.png" alt="" class="w-[100%]">
+                            <p class="text-white text-center py-4 font-semibold text-[16px]">
+                                ДВИГАТЕЛЬ
+                            </p>
+                        </div>
+
+                        <div class="">
+                            <img src="assets/img/1.png" alt="" class="w-[100%]">
+                            <p class="text-white text-center py-4 font-semibold text-[16px]">
+                                ВЫХЛОПНАЯ СИСТЕМА
+                            </p>
+                        </div>
+
+                        <div class="">
+                            <img src="assets/img/1.png" alt="" class="w-[100%]">
+                            <p class="text-white text-center py-4 font-semibold text-[16px]">
+                                РУЛЕВОЕ УПРАВЛЕНИЕ
+                            </p>
+                        </div>
+
+                        <div class="">
+                            <img src="assets/img/8.png" alt="" class="w-[100%]">
+                            <p class="text-white text-center py-4 font-semibold text-[16px]">
+                                ТОПЛИВНАЯ СИСТЕМА
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
