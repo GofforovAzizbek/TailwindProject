@@ -31,6 +31,7 @@
                     //         'color': '#ffffff'
                     //     }
                     // }
+
                 }
             },
             plugins: [
@@ -68,7 +69,6 @@
         }
     </script>
     <style>
-
     </style>
 
 </head>
@@ -76,47 +76,51 @@
 <body class="bg-dark-gradient font-[Montserrat]">
     <!-- Header start -->
     <header class="header">
-        <div class="container">
+        <div class="container lg:px-[50px] xl:px-[20px]">
 
             <div class="flexes justify-between">
                 <!-- Navigation -->
-                <nav class="flexes gap-[160px]">
-                    <a href="index.html" class="">
-                        <img src="assets/img/logo.svg" alt="Logo " class="">
+                <nav class="flexes xl:gap-[160px] md:flex lg:gap-[50px]">
+                    <a href="index.html" class="md:flex w-[60px] h-[60px]">
+                        <img src="img/logo.svg" alt="Logo" class="w-[80px] md:flex w-[60px] h-[60px]">
                     </a>
-                    <ul class="flexes gap-[40px]">
+                    <ul class="flexes xl:gap-[40px] sm:hidden lg:flex gap-[30px]">
                         <li class="">
-                            <a href="#" class="text-formated">Услуги</a>
+                            <a href="#" class="xl:text-formated lg:text-[16px]">Услуги</a>
                         </li>
 
                         <li class="">
-                            <a href="#" class="text-formated">Преимущества</a>
+                            <a href="#" class="xl:text-formated lg:text-[16px]">Преимущества</a>
                         </li>
 
                         <li class="">
-                            <a href="#" class="text-formated">Наши работы</a>
+                            <a href="#" class="xl:text-formated lg:text-[16px]">Наши работы</a>
                         </li>
 
                         <li class="">
-                            <a href="#" class="text-formated">Контакты</a>
+                            <a href="#" class="xl:text-formated lg:text-[16px]">Контакты</a>
                         </li>
                     </ul>
                 </nav>
                 <!-- Navigation end -->
 
                 <!-- Header Right block -->
-                <div class="flexes gap-[40px]">
+                <div class="flexes xl:gap-[40px] sm:hidden md:hidden lg:flex">
                     <a href="#"
-                        class="text-[20px] font-bold text-[#fff] border-b-[1px] border-[#FF0000] pt-[10px] pb-[10px]">+7
+                        class="xl:text-[20px] font-bold text-[#fff] border-b-[1px] border-[#FF0000] pt-[10px] pb-[10px] lg:text-[15px]">+7
                         (999) 999-09-90</a>
                     <div class="flexes gap-[20px]">
-                        <a href="#" class="">
-                            <img src="assets/img/whatsapp.svg" alt="Icon" class="">
+                        <a href="#" class=""> 
+                            <img src="img/whatsapp.svg" alt="Icon" class="">
                         </a>
                         <a href="#" class="">
-                            <img src="assets/img/telegram.svg" alt="Icon" class="">
+                            <img src="img/telegram.svg" alt="Icon" class="">
                         </a>
                     </div>
+                </div>
+
+                <div class="sm:flex md:flex lg:hidden">
+                    <img src="img/menu.svg" alt="" class="">
                 </div>
                 <!-- Header Right block end -->
 
@@ -125,25 +129,25 @@
             <!-- Hero Section -->
             <section class="pt-[110px] relative">
                 <div class="">
-                    <h1 class="text-[#ffffff] text-[52px] font-extrabold leading-[100%] uppercase mb-[20px]">
+                    <h1 class="text-[#ffffff] text-[52px] font-extrabold leading-[100%] uppercase mb-[20px] lg:text-[32px]">
                         Превосходство в обслуживании</h1>
-                    <p class="text-[#ffffff] font-semibold text-[36px] leading-[100%] mb-[50px]">Ваша машина в надежных
+                    <p class="text-[#ffffff] font-semibold text-[36px] leading-[100%] mb-[50px] lg:text-[24px]">Ваша машина в надежных
                         руках!</p>
                     <button
                         class="text-[18px] px-[65px] py-[20px] bg-[linear-gradient(180deg,#FF0000_0%,#C70000_100%)] rounded-[10px] text-white mb-[75px]">ОСТАВИТЬ
                         ЗАЯВКУ</button>
                     <a href="#" class="">
-                        <img src="assets/img/italy.svg" alt="picture" class="mb-[20px]">
+                        <img src="img/italy.svg" alt="picture" class="mb-[20px]">
                     </a>
                     <a href="#" class="">
-                        <img src="assets/img/britsh.svg" alt="picture" class="mb-[120px]">
+                        <img src="img/britsh.svg" alt="picture" class="mb-[120px]">
                     </a>
                     <a href="#" class="flexes gap-[20px] text-[20px] font-[500] text-[#fff] mb-[50px]">
-                        <img src="assets/img/mouse.svg" alt="" class="">
+                        <img src="img/mouse.svg" alt="" class="">
                         Листайте вниз
                     </a>
-                    <div class="absolute top-[220px] right-[-95px]">
-                        <img src="assets/img/ferrari.png" alt="" class="">
+                    <div class="absolute top-[220px] right-[-95px] lg:top-[300px]">
+                        <img src="img/ferrari.png" alt="" class="lg:w-[850px]">
                     </div>
                 </div>
             </section>
@@ -157,7 +161,7 @@
         <div class="container">
             <section class="section">
                 <div
-                    class="border-[#FF0000] border-[1px] rounded-[10px] p-[40px] bg-[url('./assets/img/section-bg.png')] bg-right bg-no-repeat bg-[#1A1A1A]">
+                    class="border-[#FF0000] border-[1px] rounded-[10px] p-[40px] bg-[url('./img/section-bg.png')] bg-right bg-no-repeat bg-[#1A1A1A]">
                     <h2
                         class="max-w-[730px] w-[100%] font-[Montserrat] font-medium text-[32px] leading-[140%] text-[#ffffff] mb-[40px]">
                         <span class="text-[#FFB72B]">
@@ -198,56 +202,56 @@
 
                         <!-- Card -->
                         <div class="">
-                            <img src="assets/img/1.png" alt="" class="w-[100%]">
+                            <img src="img/1.png" alt="" class="w-[100%]">
                             <p class="text-white text-center py-4 font-semibold text-[16px]">
                                 ТЕХ.ОБСЛУЖИВАНИЕ
                             </p>
                         </div>
 
                         <div class="">
-                            <img src="assets/img/1.png" alt="" class="w-[100%]">
+                            <img src="img/1.png" alt="" class="w-[100%]">
                             <p class="text-white text-center py-4 font-semibold text-[16px]">
                                 ДИАГНОСТИКА
                             </p>
                         </div>
 
                         <div class="">
-                            <img src="assets/img/1.png" alt="" class="w-[100%]">
+                            <img src="img/1.png" alt="" class="w-[100%]">
                             <p class="text-white text-center py-4 font-semibold text-[16px]">
                                 ХОДОВАЯ ЧАСТЬ
                             </p>
                         </div>
 
                         <div class="">
-                            <img src="assets/img/1.png" alt="" class="w-[100%]">
+                            <img src="img/1.png" alt="" class="w-[100%]">
                             <p class="text-white text-center py-4 font-semibold text-[16px]">
-                                ТРАНСМИССИЯ
+                                ТРАНСМИССИЯ            
                             </p>
                         </div>
 
                         <div class="">
-                            <img src="assets/img/1.png" alt="" class="w-[100%]">
+                            <img src="img/1.png" alt="" class="w-[100%]">
                             <p class="text-white text-center py-4 font-semibold text-[16px]">
                                 ДВИГАТЕЛЬ
                             </p>
                         </div>
 
                         <div class="">
-                            <img src="assets/img/1.png" alt="" class="w-[100%]">
+                            <img src="img/1.png" alt="" class="w-[100%]">
                             <p class="text-white text-center py-4 font-semibold text-[16px]">
                                 ВЫХЛОПНАЯ СИСТЕМА
                             </p>
                         </div>
 
                         <div class="">
-                            <img src="assets/img/1.png" alt="" class="w-[100%]">
+                            <img src="img/1.png" alt="" class="w-[100%]">
                             <p class="text-white text-center py-4 font-semibold text-[16px]">
                                 РУЛЕВОЕ УПРАВЛЕНИЕ
                             </p>
                         </div>
 
                         <div class="">
-                            <img src="assets/img/8.png" alt="" class="w-[100%]">
+                            <img src="img/8.png" alt="" class="w-[100%]">
                             <p class="text-white text-center py-4 font-semibold text-[16px]">
                                 ТОПЛИВНАЯ СИСТЕМА
                             </p>
